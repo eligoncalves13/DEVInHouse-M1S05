@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <script defer src="script.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script >
+        //Disparar quando toda a página estiver carregada
+        window.onload = function(){
+            try{
+                const body = get('body');
+                //Testar a alteração do CSS com função
+                updateCSS('body',function(selectorStyle){
+                    body.innerHTML = 'Olá, tudo funcionando como esperado!'
+                    selectorStyle.background = 'gray';
+                    selectorStyle.color = 'white';
+                });
+                //Testar o comportamento de click
+                addClick('html', function(){
+                    window.alert('Você clicou na página!')
+                });
+                //Testar o comportamento de uma ação nova 
+                addAction('html', 'mouseover', function(){
+                    window.alert('Você passou o cursor na página!')
+                })
+            }catch(error){
+                const bodyError = get('body')
+                bodyError.innerHTML = error;
+                //Testar a alteração do CSS com string
+                updateCSS('body', 'background:black; color:red');
+                //Testar a alteração do CSS com objeto
+                updateCSS('body', {fontSize: '30px'});
+            }
+        }
+    </script>
+</body>
+</html>

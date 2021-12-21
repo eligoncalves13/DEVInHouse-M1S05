@@ -1,0 +1,3 @@
+# Ex 3 - Plantas 
+
+Crie uma classe que cria plantas. Ela deve possuir os atributos nome e hidratação e um booleano que controla se a planta está viva ou não. Crie um método regar que recebe uma variável e checa se a hidratação está entre 0 e 100 e, caso esteja máxima, altera o status de vida da planta para false. Caso esteja entre 0 e 100, soma o valor passado e altera a hidratação da planta.Crie outro método que imprime no console a percentagem da hidratação da planta.
