@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: rgb(241, 238, 238);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: rgb(56, 65, 63);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(102, 110, 110);
+    margin: 15px;
+    padding: 15px;
+}
+
+main h2 {
+    padding: 10px 0;
+}
+
+input {
+    background-color: rgb(128, 144, 145);
+    border: none;
+    border-radius: 5px;
+    color: rgb(241, 238, 238);
+    margin: 15px 0;
+    padding: 5px; 
+}
+
+button {
+    background-color: rgb(128, 144, 145);
+    border: none;
+    border-radius: 5px;
+    color: rgb(241, 238, 238);
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.2s; 
+}
+
+button:hover {
+    background-color: rgb(241, 238, 238);
+    color: rgb(128, 144, 145);
+}
+
+::placeholder {
+    color: rgb(241, 238, 238);
+}
+
